@@ -128,6 +128,7 @@ class MainFragment : Fragment() {
         rewardpoint_searchView.setOnCloseListener {
             mUserList.clear()
             mRecycleViewAdapter.notifyDataSetChanged()
+            setResetView()
             false
         }
     }
